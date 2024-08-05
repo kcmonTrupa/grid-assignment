@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+            row-gap: 10px;
+            column-gap: 20px;
+            /* height: 80vh; */
+           
+            
+        }
+        .parent div{
+            background-color: blue;
+            color: bisque;
+            height: 150px;
+            /* width: 100px; */
+            font-size: 50px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .parent div:nth-child(1){
+            background-color: rgb(233, 127, 28);
+            color: antiquewhite;
+            grid-row: 4/5;
+            grid-column: 1/6;
+        }
+        .parent div:nth-child(2){
+            background-color: rgb(31, 206, 104);
+            color: antiquewhite;
+            grid-row: 2/3;
+            grid-column: 3/5;
+        }
+        .parent div:nth-child(3){
+            background-color: rgb(189, 233, 28);
+            color: antiquewhite;
+            grid-row: 1/4;
+            height: auto;
+        }
+        .parent div:nth-child(4){
+            background-color: rgb(15, 136, 173);
+            color: antiquewhite;
+            grid-row: 3/4;
+            grid-column: 3/5;
+        }
+        .parent div:nth-child(5){
+            background-color: rgb(209, 113, 218);
+            color: antiquewhite;
+            grid-row: 3/4;
+        }
+        .parent div:nth-child(6){
+            background-color: rgb(29, 114, 212);
+            color: antiquewhite;
+            grid-row: 1/2;
+            grid-column: 2/4;
+           
+        }
+        .parent div:nth-child(7){
+            background-color: rgb(9, 63, 33);
+            color: antiquewhite;
+            grid-row: 1/2;
+            grid-column: 4/6;
+        }
+        .parent div:nth-child(8){
+            background-color: rgb(38, 20, 80);
+            color: antiquewhite;
+            grid-row: 2/4;
+            height: auto;
+        }
+        .parent div:nth-child(9){
+            background-color: rgb(187, 37, 44);
+            color: antiquewhite;
+            grid-row: 2/3;
+            grid-column: 2/3;
+           
+        }
+    </style>
+</head>
+<body>
+    <section class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+
+
+    </section>
+</body>
+</html>
